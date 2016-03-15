@@ -4,9 +4,14 @@
     src: url(http://www.dafont.com/theme.php?cat=405&text=family) format("truetype");
 }
 
+@font-face {
+    font-family: "LucidaGrande";
+    src: url(http://www.dafont.com/black­chancery.font?text=Lucida+grande) format("truetype");
+}
+
 
 .background-sample{
-    opacity: 0.45;
+    opacity: 0.3;
     display:block;
     position:absolute;
     left:0;
@@ -21,6 +26,31 @@
     width: 1024px;
 }
 
+
+.centered{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.list-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+.list-bar li{
+    float: right;
+}
+.list-bar li a{
+    display: block;
+    /*color: white;*/
+    text-align: center;
+    text-decoration: none;
+
+}
+
 /*Header styles*/
 header {
     background-color: red;
@@ -33,6 +63,17 @@ header {
     width: 30%;
     float: left;
 }
+.logo-wrap p{
+    display: inline-block;
+    font-family: "Zamenitelj";
+    text-transform: uppercase;
+    font-size: 10px;
+    position: relative;
+    top: 10px;
+    left: -20px;
+    letter-spacing: 2.4px;
+    color: #b3b3b2;
+}
 
 .menu-wrap{
     background-color: green;
@@ -41,17 +82,67 @@ header {
     float: left;
 }
 
+/* Top right top bar styles*/
 .top-bar{
     background-color: aqua;
     width: 100%;
     height: 25%;
 }
 
+.top-bar-list ul{
+    font-size: 14px;
+    font-family: "Zamenitelj";
+}
+
+
+.top-bar-list li a {
+    padding: 6px 10px;
+}
+
+.top-bar-list {
+    font-size: 14px;
+    font-family: "Zamenitelj";
+}
+
+.top-bar-list li a {
+    padding: 6px 10px;
+}
+
+/* Top right bottom bar styles */
 .bottom-bar{
     background-color: crimson;
     width: 100%;
     height: 75%;
 }
+
+.bottom-bar-list-section{
+    background-color: darkgoldenrod;
+    height: 100%;
+    width: 90%;
+    float: left;
+}
+
+.bottom-bar-list {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Zamenitelj";
+}
+
+
+.bottom-bar-list li a {
+    /*color: white;*/
+    padding: 30px 30px;
+    margin: 12px 0px;
+}
+
+
+.bottom-bar-search-section{
+    background-color: darkblue;
+    height: 100%;
+    width: 10%;
+    float: left;
+}
+
 
 /* Navigation styles */
 nav{
@@ -67,6 +158,7 @@ nav{
     width: 100%;
 }
 
+/*Left content*/
 aside{
     background-color: chartreuse;
     width: 35%;
@@ -74,6 +166,56 @@ aside{
     float: left;
 }
 
+.caption-holder{
+    height: 70px;
+    background-color: cornflowerblue;
+}
+.caption{
+    /*display: inline-block;*/
+    position: relative;
+    top: 13px;
+    left: -16px;
+    width: 240px;
+    background-image: url("../img/block.png");
+    height: 50px;
+    /*background-color: blue;*/
+}
+.caption-holder p{
+    top: -23px;
+    left: 17px;
+    color: white;
+    position: relative ;
+    text-transform: uppercase;
+    font-size: 30px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+
+.caption-bg{
+    margin-top: 13px;
+    display: block;
+    margin-left: -17px;
+}
+
+article{
+    height: 90%;
+    width: 86%;
+    background-color: red;
+    float: right;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+article p{
+    font-family: "LucidaGrande";
+    padding: 0px 15px;
+    font-size: 14px;
+
+}
+
+/*Right content*/
 section{
     background-color: chocolate;
     width: 65%;
@@ -82,23 +224,8 @@ section{
 }
 
 
-/* UL styles */
-.ul{
-    font-size: 13px;
-    font-family: "Zamenitelj";
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.horse-img{
+    padding-left: 10px;
+    padding-top: 8px;
 }
 
-
-li {
-    float: right;
-}
-li a {
-    display: block;
-    /*color: white;*/
-    text-align: center;
-    padding: 6px 14px;
-    text-decoration: none;
-}

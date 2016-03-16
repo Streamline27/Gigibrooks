@@ -3,6 +3,9 @@
 <head>
     <link type="text/css" rel="stylesheet" href="css/styles.css">
     <link href="http://www.dafont.com/theme.php?cat=405&text=family" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
     <!--Sample image-->
@@ -20,10 +23,13 @@
                         <li><a>My gifts</a></li>
                         <li><a>My account</a></li>
                         <li><a>Sign In</a></li>
-                        <li><a>Currency $ .</a></li>
-                        <li><a>Live chart</a></li>
+                        <li><a>Currency &#163 &#9660</a></li>
+                        <li class="active">
+                            <img src="img/rect.png" class="active-img">
+                            <a>Live chat</a>
+                        </li>
                     </ul>
-                </div> <!-- End top-bar-list-->
+                </div> <!-- End top-bar-->
                 <div class="bottom-bar">
                     <div class="bottom-bar-list-section ">
                         <ul class="bottom-bar-list list-bar">
@@ -33,9 +39,40 @@
                             <li><a>Collection</a></li>
                             <li><a>Shop</a></li>
                         </ul>
-                    </div> <!-- End bottom-bar-search-section-->
+                    </div> <!-- End bottom-bar-list-section-->
                     <div class="bottom-bar-search-section">
-                        <img src="img/glass.png" class="centered">
+                            <!--<img src="img/glass.png" class="centered glass">-->
+                            <div class="opened-search-bar">
+                                <div class="search-input-bar">
+                                    <input type="text"/>
+                                </div><!-- End search-input-bar -->
+                                <div class="opened-search-bar-content">
+                                    <div class="offer-section">
+                                        <div class="offer-section-container">
+                                            <img src="img/bed.jpg"/>
+                                            <div class="offer-section-text">
+                                                <h1>Karla bed</h1>
+                                                <p>&#163 3799.00</p>
+                                            </div><!-- End offer-section-text -->
+                                        </div><!-- End offer-section-container -->
+                                    </div><!-- End offer-section-->
+                                    <div class="offer-section">
+                                        <div class="offer-section-container">
+                                            <img src="img/bed.jpg"/>
+                                            <div class="offer-section-text">
+                                                <h1>Karla bed</h1>
+                                                <p>&#163 3799.00</p>
+                                            </div><!-- End offer-section-text -->
+                                        </div><!-- End offer-section-container-->
+                                    </div><!-- End offer-section-->
+                                    <div class="view-all-section">
+                                        <div class="view-all-caption">
+                                            <span>View All(15)</span>
+                                        </div><!-- End view-all-caption -->
+                                    </div><!-- End view-all-section-->
+                                </div>
+
+                            </div><!-- End opened-search-bar -->
                     </div> <!-- End bottom-bar-search-section-->
                 </div> <!-- End bottom-bar -->
             </div> <!-- End menu-wrap -->

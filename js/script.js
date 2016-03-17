@@ -12,4 +12,19 @@ $(document).ready(function(){
             $openedSearchBar.stop().hide(180);
         }
     );
+
+    $('.basket-button').click(
+        function () {
+            $(this).addClass('clicked');
+            $('.basket-button .active-img').show();
+            $('.basket-bar').stop().show();
+        }
+    );
+    $('.basket-bar-close').click(
+        function () {
+            $('.basket-button').removeClass('clicked');
+            $('.basket-button .active-img').hide();
+            $('.basket-bar').stop().hide();
+        }
+    );
 });

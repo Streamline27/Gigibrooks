@@ -11,7 +11,7 @@
 
 
 .background-sample{
-    /*opacity: 0.8;*/
+    opacity: 0.6;
     display:block;
     position:absolute;
     left:0;
@@ -89,11 +89,14 @@ header {
     /*background-color: aqua;*/
     width: 100%;
     height: 25%;
+
 }
 
 
 .top-bar-list li a {
     padding: 6px 7px;
+    z-index: 3;
+    position: relative;
 }
 
 .top-bar-list {
@@ -106,10 +109,161 @@ header {
     margin-right: 5px;
 }
 
+/*Basket bar */
+.basket-bar{
+    width: 427px;
+    height: 390px;
+    background-color: #f4f4f4;
+    position: relative;
+    left: 290px;
+    top: 45px;
+    display: none;
+    /*opacity: 0.4;*/
+}
+.basket-bar-content-wrap{
+    display: inline-block;
+    margin: 0px 13px;
+    margin-top: 13;
+    width: 400px;
+    height: 300px;
+    /*background-color: yellow;*/
+    border-bottom: 1px dashed #484848;
+}
+.basket-bar-content-wrap .thumbnail{
+    margin: 0px 15px;
+}
+.basket-bar-content{
+    width: 175px;
+    height: 80%;
+    /*background-color: #b3b3b2;*/
+    float: left;
+    font-family: Arial;
+}
+.cross{
+    position: relative;
+    left: 124px;
+    top: 3px;
+    float:left;
+}
+.basket-button .active-img{
+    top: -10px;
+    z-index: 2;
+    display: none;
+}
+.clicked{
+    color: white;
+}
+
+.black-button{
+    width: 25px;
+    height: 25px;
+    background-color: #484848;
+    color: #f4f4f4;
+    position: relative;
+    right: 250px;
+}
+.basket-bar-content .product-caption{
+    font-family: "Zamenitelj";
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 4px;
+    margin-left: 11px;
+}
+.basket-bar-content .points {
+    font-size:13px;
+    margin-left: 10px;
+}
+.product-info{
+    font-family: "Arial";
+    font-size: 12px;
+}
+.product-info .left-column, .basket-bar-content .right-column{
+    width: 50%;
+    height: 60%;
+    float: left;
+    /*background-color: white;*/
+
+}
+.first-p{
+    margin-top: 20px;
+}
+.last-p{
+    margin-top: 15px;
+}
+.no-margin-left{
+    margin-left: 2px !important;
+}
+.subtotal-margin{
+    margin-top: 30px !important;
+}
+
+.product-info .left-column p{
+    margin-left: 11px;
+}
+.product-info .right-column p{
+    text-align: right;
+    margin-right: 29px;
+}
+.delivery-charges-wrap{
+    width: 100%;
+    height: 32px;
+    /*background-color: green;*/
+    clear: both;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    line-height: 32px;
+}
+.delivery-charges-wrap span{
+    text-decoration: underline;
+}
+.arrowed{
+    background-image: url("../img/arrow2.png");
+    height: 26px;
+    width: 143px;
+    margin-left: 35px;
+    margin-top: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Zamenitelj";
+    line-height: 26px;
+    color: white;
+}
+.basket-bar-close{
+    margin: 0px 13px;
+    width: 400px;
+    height: 49px;
+    /*background-color: orange;*/
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+.basket-bar-buttons{
+    /*background-color: aqua;*/
+    clear: both;
+    width: 100%;
+    height: 20%;
+}
+.button-left, .button-right{
+    width: 50%;
+    height: 100%;
+    /*background-color: blue;*/
+    float: left;
+}
+.button-left{
+    /*background-color: orange;*/
+}
+
+
+
+
 .active-img{
     position: absolute;
     display: inline;
-    z-index: -1;
+    z-index: 0;
     top:-35px;
 }
 .active{
@@ -193,10 +347,11 @@ nav .bottom-bar-list li:hover{
     height: 218px;
     border-bottom: 1px dashed black
 }
-.offer-section-container img{
+.thumbnail{
     border: 10px solid white;
     float: left;
     box-shadow: 0px 25px 40px -21px  ;
+    /*TO DO Add box shadow * */
 }
 .offer-section-container{
     display: inline-block;
@@ -270,7 +425,7 @@ aside{
     height: 70px;
     background-color: #f4f4f4;
 }
-.caption{
+.caption-bg{
     position: relative;
     top: 13px;
     left: -16px;
@@ -290,12 +445,6 @@ aside{
     padding: 0;
 }
 
-
-.caption-bg{
-    margin-top: 13px;
-    display: block;
-    margin-left: -17px;
-}
 
 article{
     height: 90%;
